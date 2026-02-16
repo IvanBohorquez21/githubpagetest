@@ -16,45 +16,70 @@
         <p class="text-xl mt-4 text-slate-400 max-w-2xl">
             Ingeniero Electrónico & Desarrollador Python especializado en Data Science y Machine Learning.
         </p>
-        <div class="mt-8 flex gap-4">
-            <a href="https://github.com/IvanBohorquez21" target="_blank" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-bold transition flex items-center">
+        
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="https://github.com/IvanBohorquez21" target="_blank" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-bold transition flex items-center shadow-lg shadow-blue-900/20">
                 <i class="fab fa-github mr-2"></i> GitHub
             </a>
-            <a href="#proyectos" class="border border-slate-700 hover:bg-slate-800 px-6 py-3 rounded-full font-bold transition">
-                Ver Proyectos
+            <a href="#proyectos" class="bg-emerald-600 hover:bg-emerald-700 px-6 py-3 rounded-full font-bold transition flex items-center shadow-lg shadow-emerald-900/20">
+                <i class="fas fa-rocket mr-2"></i> Ver Apps en Vivo
+            </a>
+            <a href="https://www.linkedin.com/in/TU_USUARIO" target="_blank" class="border border-slate-700 hover:bg-slate-800 px-6 py-3 rounded-full font-bold transition flex items-center">
+                <i class="fab fa-linkedin mr-2"></i> LinkedIn
             </a>
         </div>
     </header>
 
-    <section id="proyectos" class="py-20 px-10 bg-slate-800/50">
-        <h2 class="text-3xl font-bold text-center mb-12">Proyectos Destacados</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <section id="proyectos" class="py-20 px-6 bg-slate-800/50">
+        <h2 class="text-3xl font-bold text-center mb-12 italic text-slate-200">Proyectos Destacados</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             
-            <a href="https://github.com/IvanBohorquez21/Solar-Energy-Prediction" target="_blank" class="group bg-slate-900 p-6 rounded-xl border border-slate-700 hover:border-blue-500 hover:scale-[1.02] transition-all duration-300 relative">
-                <div class="absolute top-4 right-4 text-slate-700 group-hover:text-blue-500 transition-colors">
-                    <i class="fab fa-github text-2xl"></i>
+            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-all duration-300 shadow-xl">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-2xl font-bold text-blue-400">Predicción Energía Solar</h3>
+                    <i class="fas fa-sun text-yellow-500 text-2xl"></i>
                 </div>
-                <h3 class="text-xl font-bold text-blue-400">Predicción Energía Solar</h3>
-                <p class="text-slate-400 mt-2 text-sm">Dashboard en tiempo real con Streamlit que predice la irradiancia solar usando APIs meteorológicas.</p>
-                <div class="mt-4 flex gap-2">
-                    <span class="text-xs bg-slate-800 px-2 py-1 rounded text-blue-300 border border-blue-900/50">Python</span>
-                    <span class="text-xs bg-slate-800 px-2 py-1 rounded text-blue-300 border border-blue-900/50">Streamlit</span>
+                <p class="text-slate-400 mb-6 leading-relaxed">Dashboard en tiempo real con Streamlit que predice la irradiancia solar usando APIs meteorológicas y modelos físicos.</p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="text-xs font-semibold bg-blue-900/30 text-blue-300 px-3 py-1 rounded-full border border-blue-800">Python</span>
+                    <span class="text-xs font-semibold bg-blue-900/30 text-blue-300 px-3 py-1 rounded-full border border-blue-800">Streamlit</span>
                 </div>
-            </a>
+                <div class="flex gap-4">
+                    <a href="https://github.com/IvanBohorquez21/Solar-Energy-Prediction" target="_blank" class="flex-1 text-center bg-slate-800 hover:bg-slate-700 py-2 rounded-lg font-semibold transition text-sm">
+                        <i class="fab fa-github mr-2"></i>Código
+                    </a>
+                    <a href="https://solar-prediction-ivan.streamlit.app/" target="_blank" class="flex-1 text-center bg-blue-600 hover:bg-blue-500 py-2 rounded-lg font-semibold transition text-sm">
+                        <i class="fas fa-external-link-alt mr-2"></i>Demo Live
+                    </a>
+                </div>
+            </div>
 
-            <a href="https://github.com/IvanBohorquez21/Movie-Sentiment-Analysis" target="_blank" class="group bg-slate-900 p-6 rounded-xl border border-slate-700 hover:border-emerald-500 hover:scale-[1.02] transition-all duration-300 relative">
-                <div class="absolute top-4 right-4 text-slate-700 group-hover:text-emerald-500 transition-colors">
-                    <i class="fab fa-github text-2xl"></i>
+            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-all duration-300 shadow-xl">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-2xl font-bold text-emerald-400">Análisis de Reseñas</h3>
+                    <i class="fas fa-comment-dots text-emerald-500 text-2xl"></i>
                 </div>
-                <h3 class="text-xl font-bold text-emerald-400">Análisis de reseñas</h3>
-                <p class="text-slate-400 mt-2 text-sm">Pipeline de NLP para clasificación de reseñas de películas usando Scikit-Learn.</p>
-                <div class="mt-4 flex gap-2">
-                    <span class="text-xs bg-slate-800 px-2 py-1 rounded text-emerald-300 border border-emerald-900/50">NLP</span>
-                    <span class="text-xs bg-slate-800 px-2 py-1 rounded text-emerald-300 border border-emerald-900/50">Scikit-Learn</span>
+                <p class="text-slate-400 mb-6 leading-relaxed">Pipeline de NLP para clasificación de sentimientos en reseñas de películas utilizando Scikit-Learn y despliegue en la nube.</p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="text-xs font-semibold bg-emerald-900/30 text-emerald-300 px-3 py-1 rounded-full border border-emerald-800">NLP</span>
+                    <span class="text-xs font-semibold bg-emerald-900/30 text-emerald-300 px-3 py-1 rounded-full border border-emerald-800">Scikit-Learn</span>
                 </div>
-            </a>
+                <div class="flex gap-4">
+                    <a href="https://github.com/IvanBohorquez21/Movie-Sentiment-Analysis" target="_blank" class="flex-1 text-center bg-slate-800 hover:bg-slate-700 py-2 rounded-lg font-semibold transition text-sm">
+                        <i class="fab fa-github mr-2"></i>Código
+                    </a>
+                    <a href="https://movie-sentiment-ivan.streamlit.app/" target="_blank" class="flex-1 text-center bg-emerald-600 hover:bg-emerald-500 py-2 rounded-lg font-semibold transition text-sm">
+                        <i class="fas fa-external-link-alt mr-2"></i>Demo Live
+                    </a>
+                </div>
+            </div>
 
         </div>
     </section>
 
-    <footer class="py-10 text-center text-slate-500 text-sm">
+    <footer class="py-10 text-center text-slate-600 text-sm">
+        <p>© 2026 Ivan Bohorquez - Construido con Tailwind CSS</p>
+    </footer>
+
+</body>
+</html>
