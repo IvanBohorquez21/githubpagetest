@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivan Bohorquez | Portafolio</title>
+    
+    <link rel="icon" type="image/png" href="ico_def.png">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-slate-900 text-white font-sans scroll-smooth">
 
     <header class="min-h-screen flex flex-col justify-center items-center text-center p-5">
+        <div class="mb-6">
+            <img src="ico_def.png" alt="Logo Ivan Bohorquez" class="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-blue-500/30 shadow-2xl shadow-blue-500/20 object-cover">
+        </div>
+
         <h1 class="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
             Ivan Bohorquez
         </h1>
@@ -85,7 +92,6 @@
     </footer>
 
     <script>
-        // Forzar que la página cargue siempre al inicio, incluso si hay un ancla en la URL
         if (window.location.hash) {
             window.location.hash = ""; 
         }
