@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
     <style>
-        /* Animación de levitación suave */
         @keyframes float {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-20px); }
@@ -46,31 +45,26 @@
 
         <div class="mt-10 mb-12 w-full max-w-4xl">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                
                 <div class="flex flex-col items-center p-4 rounded-xl border border-slate-800 bg-slate-800/20 hover:border-blue-500 transition-all group">
                     <i class="devicon-python-plain text-4xl mb-2 text-blue-400"></i>
                     <span class="text-sm font-bold text-white mb-1">Python</span>
                     <p class="text-[11px] text-slate-500 leading-tight px-2">Automatización, scripting y desarrollo backend.</p>
                 </div>
-
                 <div class="flex flex-col items-center p-4 rounded-xl border border-slate-800 bg-slate-800/20 hover:border-emerald-500 transition-all group">
                     <i class="fas fa-brain text-4xl mb-2 text-emerald-400"></i>
                     <span class="text-sm font-bold text-white mb-1">Machine Learning</span>
                     <p class="text-[11px] text-slate-500 leading-tight px-2">Modelado predictivo y análisis con Scikit-Learn.</p>
                 </div>
-
                 <div class="flex flex-col items-center p-4 rounded-xl border border-slate-800 bg-slate-800/20 hover:border-cyan-400 transition-all group">
                     <i class="fas fa-database text-4xl mb-2 text-cyan-400"></i>
                     <span class="text-sm font-bold text-white mb-1">Bases de Datos</span>
                     <p class="text-[11px] text-slate-500 leading-tight px-2">Gestión de datos estructurados y consultas SQL.</p>
                 </div>
-
                 <div class="flex flex-col items-center p-4 rounded-xl border border-slate-800 bg-slate-800/20 hover:border-orange-500 transition-all group">
                     <i class="fas fa-bolt text-4xl mb-2 text-orange-400"></i>
                     <span class="text-sm font-bold text-white mb-1">Electrónica</span>
                     <p class="text-[11px] text-slate-500 leading-tight px-2">Sistemas embebidos y procesamiento de señales.</p>
                 </div>
-
             </div>
         </div>
         
@@ -92,14 +86,31 @@
 
     <section id="proyectos" class="py-20 px-6 bg-slate-800/50">
         <h2 class="text-3xl font-bold text-center mb-12 italic text-slate-200">Proyectos Destacados</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             
-            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-all duration-300 shadow-xl">
+            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-emerald-400 transition-all duration-300 shadow-xl flex flex-col h-full">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-2xl font-bold text-emerald-400">Segmentación Palmas de Aceite</h3>
+                    <i class="fas fa-leaf text-emerald-500 text-2xl"></i>
+                </div>
+                <p class="text-slate-400 mb-6 leading-relaxed text-sm flex-grow">Implementación de Deep Learning para la detección y segmentación de cultivos de palma de aceite utilizando imágenes satelitales.</p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="text-[10px] font-semibold bg-emerald-900/30 text-emerald-300 px-3 py-1 rounded-full border border-emerald-800">Deep Learning</span>
+                    <span class="text-[10px] font-semibold bg-emerald-900/30 text-emerald-300 px-3 py-1 rounded-full border border-emerald-800">Computer Vision</span>
+                </div>
+                <div class="flex gap-4">
+                    <a href="https://github.com/hvargas121288/palm_oil_segmentation_satelital_images" target="_blank" class="w-full text-center bg-slate-800 hover:bg-slate-700 py-2 rounded-lg font-semibold transition text-xs">
+                        <i class="fab fa-github mr-2"></i>Ver Código en GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-all duration-300 shadow-xl flex flex-col h-full">
                 <div class="flex justify-between items-start mb-4">
                     <h3 class="text-2xl font-bold text-blue-400">Predicción Energía Solar</h3>
                     <i class="fas fa-sun text-yellow-500 text-2xl"></i>
                 </div>
-                <p class="text-slate-400 mb-6 leading-relaxed text-sm">Dashboard en tiempo real con Streamlit que predice la irradiancia solar usando APIs meteorológicas y modelos físicos.</p>
+                <p class="text-slate-400 mb-6 leading-relaxed text-sm flex-grow">Dashboard en tiempo real con Streamlit que predice la irradiancia solar usando APIs meteorológicas y modelos físicos.</p>
                 <div class="flex flex-wrap gap-2 mb-8">
                     <span class="text-[10px] font-semibold bg-blue-900/30 text-blue-300 px-3 py-1 rounded-full border border-blue-800">Python</span>
                     <span class="text-[10px] font-semibold bg-blue-900/30 text-blue-300 px-3 py-1 rounded-full border border-blue-800">Streamlit</span>
@@ -114,15 +125,15 @@
                 </div>
             </div>
 
-            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-all duration-300 shadow-xl">
+            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-all duration-300 shadow-xl flex flex-col h-full">
                 <div class="flex justify-between items-start mb-4">
-                    <h3 class="text-2xl font-bold text-emerald-400">Análisis de Reseñas</h3>
-                    <i class="fas fa-comment-dots text-emerald-500 text-2xl"></i>
+                    <h3 class="text-2xl font-bold text-indigo-400">Análisis de Reseñas</h3>
+                    <i class="fas fa-comment-dots text-indigo-500 text-2xl"></i>
                 </div>
-                <p class="text-slate-400 mb-6 leading-relaxed text-sm">Pipeline de NLP para clasificación de sentimientos en reseñas de películas utilizando Scikit-Learn y despliegue en la nube.</p>
+                <p class="text-slate-400 mb-6 leading-relaxed text-sm flex-grow">Pipeline de NLP para clasificación de sentimientos en reseñas de películas utilizando Scikit-Learn y despliegue en la nube.</p>
                 <div class="flex flex-wrap gap-2 mb-8">
-                    <span class="text-[10px] font-semibold bg-emerald-900/30 text-emerald-300 px-3 py-1 rounded-full border border-emerald-800">NLP</span>
-                    <span class="text-[10px] font-semibold bg-emerald-900/30 text-emerald-300 px-3 py-1 rounded-full border border-emerald-800">Scikit-Learn</span>
+                    <span class="text-[10px] font-semibold bg-indigo-900/30 text-indigo-300 px-3 py-1 rounded-full border border-indigo-800">NLP</span>
+                    <span class="text-[10px] font-semibold bg-indigo-900/30 text-indigo-300 px-3 py-1 rounded-full border border-indigo-800">Scikit-Learn</span>
                 </div>
                 <div class="flex gap-4">
                     <a href="https://github.com/IvanBohorquez21/Movie-Sentiment-Analysis" target="_blank" class="flex-1 text-center bg-slate-800 hover:bg-slate-700 py-2 rounded-lg font-semibold transition text-xs">
