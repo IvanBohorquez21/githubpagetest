@@ -17,70 +17,74 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
     <style>
+        /* Animación de levitación suave */
         @keyframes float {
             0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+            50% { transform: translateY(-20px); }
             100% { transform: translateY(0px); }
         }
-        .floating { animation: float 4s ease-in-out infinite; }
+        .floating { 
+            animation: float 4s ease-in-out infinite; 
+        }
     </style>
 </head>
 <body class="bg-slate-900 text-white font-sans scroll-smooth">
 
     <header class="min-h-screen flex flex-col justify-center items-center text-center p-5">
-        <div class="mb-4 floating">
-            <img src="ico_def.png" alt="Logo Ivan Bohorquez" class="w-20 h-20 md:w-28 md:h-28 rounded-full border-4 border-blue-500/30 shadow-2xl shadow-blue-500/20 object-cover">
+        <div class="mb-8 floating">
+            <img src="ico_def.png" alt="Logo Ivan Bohorquez" 
+                 class="w-32 h-32 md:w-48 md:h-48 rounded-full border-4 border-blue-500/40 shadow-[0_0_50px_rgba(59,130,246,0.3)] object-cover">
         </div>
 
-        <h1 class="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+        <h1 class="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
             Ivan Bohorquez
         </h1>
         
-        <p class="text-lg mt-3 text-slate-400 max-w-2xl font-medium">
+        <p class="text-xl mt-4 text-slate-400 max-w-2xl font-medium">
             Ingeniero Electrónico & Desarrollador Python especializado en Data Science y Machine Learning.
         </p>
 
-        <div class="mt-8 mb-10 w-full max-w-3xl">
+        <div class="mt-10 mb-12 w-full max-w-4xl">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 
-                <div class="flex flex-col items-center p-3 rounded-xl border border-slate-800 bg-slate-800/20 hover:border-blue-500 transition-all group">
-                    <i class="devicon-python-plain text-3xl mb-2 text-blue-400"></i>
-                    <span class="text-xs font-bold text-white mb-1">Python</span>
-                    <p class="text-[10px] text-slate-500 leading-tight">Automatización, scripting y desarrollo backend.</p>
+                <div class="flex flex-col items-center p-4 rounded-xl border border-slate-800 bg-slate-800/20 hover:border-blue-500 transition-all group">
+                    <i class="devicon-python-plain text-4xl mb-2 text-blue-400"></i>
+                    <span class="text-sm font-bold text-white mb-1">Python</span>
+                    <p class="text-[11px] text-slate-500 leading-tight px-2">Automatización, scripting y desarrollo backend.</p>
                 </div>
 
-                <div class="flex flex-col items-center p-3 rounded-xl border border-slate-800 bg-slate-800/20 hover:border-emerald-500 transition-all group">
-                    <i class="fas fa-brain text-3xl mb-2 text-emerald-400"></i>
-                    <span class="text-xs font-bold text-white mb-1">Machine Learning</span>
-                    <p class="text-[10px] text-slate-500 leading-tight">Modelado predictivo y análisis con Scikit-Learn.</p>
+                <div class="flex flex-col items-center p-4 rounded-xl border border-slate-800 bg-slate-800/20 hover:border-emerald-500 transition-all group">
+                    <i class="fas fa-brain text-4xl mb-2 text-emerald-400"></i>
+                    <span class="text-sm font-bold text-white mb-1">Machine Learning</span>
+                    <p class="text-[11px] text-slate-500 leading-tight px-2">Modelado predictivo y análisis con Scikit-Learn.</p>
                 </div>
 
-                <div class="flex flex-col items-center p-3 rounded-xl border border-slate-800 bg-slate-800/20 hover:border-cyan-400 transition-all group">
-                    <i class="fas fa-database text-3xl mb-2 text-cyan-400"></i>
-                    <span class="text-xs font-bold text-white mb-1">Bases de Datos</span>
-                    <p class="text-[10px] text-slate-500 leading-tight">Gestión de datos estructurados y consultas SQL.</p>
+                <div class="flex flex-col items-center p-4 rounded-xl border border-slate-800 bg-slate-800/20 hover:border-cyan-400 transition-all group">
+                    <i class="fas fa-database text-4xl mb-2 text-cyan-400"></i>
+                    <span class="text-sm font-bold text-white mb-1">Bases de Datos</span>
+                    <p class="text-[11px] text-slate-500 leading-tight px-2">Gestión de datos estructurados y consultas SQL.</p>
                 </div>
 
-                <div class="flex flex-col items-center p-3 rounded-xl border border-slate-800 bg-slate-800/20 hover:border-orange-500 transition-all group">
-                    <i class="fas fa-bolt text-3xl mb-2 text-orange-400"></i>
-                    <span class="text-xs font-bold text-white mb-1">Electrónica</span>
-                    <p class="text-[10px] text-slate-500 leading-tight">Sistemas embebidos y procesamiento de señales.</p>
+                <div class="flex flex-col items-center p-4 rounded-xl border border-slate-800 bg-slate-800/20 hover:border-orange-500 transition-all group">
+                    <i class="fas fa-bolt text-4xl mb-2 text-orange-400"></i>
+                    <span class="text-sm font-bold text-white mb-1">Electrónica</span>
+                    <p class="text-[11px] text-slate-500 leading-tight px-2">Sistemas embebidos y procesamiento de señales.</p>
                 </div>
 
             </div>
         </div>
         
-        <div class="flex flex-wrap justify-center gap-3">
-            <a href="https://github.com/IvanBohorquez21" target="_blank" class="text-sm bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-bold transition flex items-center shadow-lg">
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="https://github.com/IvanBohorquez21" target="_blank" class="bg-blue-600 hover:bg-blue-700 px-8 py-3.5 rounded-full font-bold transition flex items-center shadow-lg">
                 <i class="fab fa-github mr-2"></i> GitHub
             </a>
-            <a href="#proyectos" class="text-sm bg-emerald-600 hover:bg-emerald-700 px-6 py-3 rounded-full font-bold transition flex items-center shadow-lg">
+            <a href="#proyectos" class="bg-emerald-600 hover:bg-emerald-700 px-8 py-3.5 rounded-full font-bold transition flex items-center shadow-lg">
                 <i class="fas fa-rocket mr-2"></i> Proyectos
             </a>
-            <a href="CV_Ivan_Bohorquez_Hernandez1.pdf" download="CV_Ivan_Bohorquez" class="text-sm bg-slate-100 text-slate-900 hover:bg-white px-6 py-3 rounded-full font-bold transition flex items-center shadow-lg">
+            <a href="CV_Ivan_Bohorquez_Hernandez1.pdf" download="CV_Ivan_Bohorquez" class="bg-slate-100 text-slate-900 hover:bg-white px-8 py-3.5 rounded-full font-bold transition flex items-center shadow-lg">
                 <i class="fas fa-file-download mr-2"></i> CV
             </a>
-            <a href="https://www.linkedin.com/in/ivan-fernando-bohorquez-hernandez-9a0aa31a1/" target="_blank" class="text-sm bg-[#0077B5] hover:bg-[#005885] text-white px-6 py-3 rounded-full font-bold transition flex items-center shadow-lg">
+            <a href="https://www.linkedin.com/in/ivan-fernando-bohorquez-hernandez-9a0aa31a1/" target="_blank" class="bg-[#0077B5] hover:bg-[#005885] text-white px-8 py-3.5 rounded-full font-bold transition flex items-center shadow-lg">
                 <i class="fab fa-linkedin mr-2"></i> LinkedIn
             </a>
         </div>
@@ -89,6 +93,7 @@
     <section id="proyectos" class="py-20 px-6 bg-slate-800/50">
         <h2 class="text-3xl font-bold text-center mb-12 italic text-slate-200">Proyectos Destacados</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            
             <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-all duration-300 shadow-xl">
                 <div class="flex justify-between items-start mb-4">
                     <h3 class="text-2xl font-bold text-blue-400">Predicción Energía Solar</h3>
@@ -108,6 +113,7 @@
                     </a>
                 </div>
             </div>
+
             <div class="bg-slate-900 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-all duration-300 shadow-xl">
                 <div class="flex justify-between items-start mb-4">
                     <h3 class="text-2xl font-bold text-emerald-400">Análisis de Reseñas</h3>
@@ -127,6 +133,7 @@
                     </a>
                 </div>
             </div>
+
         </div>
     </section>
 
