@@ -5,15 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivan Bohorquez | Portafolio</title>
     
+    <meta property="og:title" content="Ivan Bohorquez | Portafolio Profesional">
+    <meta property="og:description" content="Ingeniero Electrónico & Desarrollador Python especializado en Data Science y Machine Learning.">
+    <meta property="og:image" content="https://ivanbohorquez21.github.io/githubpagetest/ico_def.png">
+    <meta property="og:url" content="https://ivanbohorquez21.github.io/githubpagetest/">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="icon" type="image/x-icon" href="ico_def.ico">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* Animación de levitación suave */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
 </head>
 <body class="bg-slate-900 text-white font-sans scroll-smooth">
 
     <header class="min-h-screen flex flex-col justify-center items-center text-center p-5">
-        <div class="mb-6">
+        <div class="mb-6 floating">
             <img src="ico_def.png" alt="Logo Ivan Bohorquez" class="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-blue-500/30 shadow-2xl shadow-blue-500/20 object-cover">
         </div>
 
